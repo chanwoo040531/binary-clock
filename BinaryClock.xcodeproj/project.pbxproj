@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80ADB0F2ACB8720008F4125 /* BinaryClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB0E2ACB8720008F4125 /* BinaryClockApp.swift */; };
+		A80ADB112ACB8720008F4125 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB102ACB8720008F4125 /* ContentView.swift */; };
+		A80ADB132ACB8720008F4125 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB122ACB8720008F4125 /* Item.swift */; };
+		A80ADB152ACB8721008F4125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80ADB142ACB8721008F4125 /* Assets.xcassets */; };
+		A80ADB182ACB8721008F4125 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80ADB172ACB8721008F4125 /* Preview Assets.xcassets */; };
+		A80ADB232ACB8721008F4125 /* BinaryClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB222ACB8721008F4125 /* BinaryClockTests.swift */; };
+		A80ADB2D2ACB8721008F4125 /* BinaryClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB2C2ACB8721008F4125 /* BinaryClockUITests.swift */; };
+		A80ADB2F2ACB8721008F4125 /* BinaryClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB2E2ACB8721008F4125 /* BinaryClockUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80ADB1F2ACB8721008F4125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80ADB032ACB8720008F4125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80ADB0A2ACB8720008F4125;
+			remoteInfo = BinaryClock;
+		};
+		A80ADB292ACB8721008F4125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80ADB032ACB8720008F4125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80ADB0A2ACB8720008F4125;
+			remoteInfo = BinaryClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A80ADB0B2ACB8720008F4125 /* BinaryClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinaryClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80ADB0E2ACB8720008F4125 /* BinaryClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryClockApp.swift; sourceTree = "<group>"; };
+		A80ADB102ACB8720008F4125 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A80ADB122ACB8720008F4125 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A80ADB142ACB8721008F4125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A80ADB172ACB8721008F4125 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A80ADB192ACB8721008F4125 /* BinaryClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinaryClock.entitlements; sourceTree = "<group>"; };
+		A80ADB1E2ACB8721008F4125 /* BinaryClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80ADB222ACB8721008F4125 /* BinaryClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryClockTests.swift; sourceTree = "<group>"; };
+		A80ADB282ACB8721008F4125 /* BinaryClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80ADB2C2ACB8721008F4125 /* BinaryClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryClockUITests.swift; sourceTree = "<group>"; };
+		A80ADB2E2ACB8721008F4125 /* BinaryClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A80ADB082ACB8720008F4125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80ADB1B2ACB8721008F4125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80ADB252ACB8721008F4125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A80ADB022ACB8720008F4125 = {
+			isa = PBXGroup;
+			children = (
+				A80ADB0D2ACB8720008F4125 /* BinaryClock */,
+				A80ADB212ACB8721008F4125 /* BinaryClockTests */,
+				A80ADB2B2ACB8721008F4125 /* BinaryClockUITests */,
+				A80ADB0C2ACB8720008F4125 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A80ADB0C2ACB8720008F4125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A80ADB0B2ACB8720008F4125 /* BinaryClock.app */,
+				A80ADB1E2ACB8721008F4125 /* BinaryClockTests.xctest */,
+				A80ADB282ACB8721008F4125 /* BinaryClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80ADB0D2ACB8720008F4125 /* BinaryClock */ = {
+			isa = PBXGroup;
+			children = (
+				A80ADB0E2ACB8720008F4125 /* BinaryClockApp.swift */,
+				A80ADB102ACB8720008F4125 /* ContentView.swift */,
+				A80ADB122ACB8720008F4125 /* Item.swift */,
+				A80ADB142ACB8721008F4125 /* Assets.xcassets */,
+				A80ADB192ACB8721008F4125 /* BinaryClock.entitlements */,
+				A80ADB162ACB8721008F4125 /* Preview Content */,
+			);
+			path = BinaryClock;
+			sourceTree = "<group>";
+		};
+		A80ADB162ACB8721008F4125 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A80ADB172ACB8721008F4125 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A80ADB212ACB8721008F4125 /* BinaryClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80ADB222ACB8721008F4125 /* BinaryClockTests.swift */,
+			);
+			path = BinaryClockTests;
+			sourceTree = "<group>";
+		};
+		A80ADB2B2ACB8721008F4125 /* BinaryClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A80ADB2C2ACB8721008F4125 /* BinaryClockUITests.swift */,
+				A80ADB2E2ACB8721008F4125 /* BinaryClockUITestsLaunchTests.swift */,
+			);
+			path = BinaryClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80ADB0A2ACB8720008F4125 /* BinaryClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80ADB322ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClock" */;
+			buildPhases = (
+				A80ADB072ACB8720008F4125 /* Sources */,
+				A80ADB082ACB8720008F4125 /* Frameworks */,
+				A80ADB092ACB8720008F4125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinaryClock;
+			productName = BinaryClock;
+			productReference = A80ADB0B2ACB8720008F4125 /* BinaryClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A80ADB1D2ACB8721008F4125 /* BinaryClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80ADB352ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockTests" */;
+			buildPhases = (
+				A80ADB1A2ACB8721008F4125 /* Sources */,
+				A80ADB1B2ACB8721008F4125 /* Frameworks */,
+				A80ADB1C2ACB8721008F4125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80ADB202ACB8721008F4125 /* PBXTargetDependency */,
+			);
+			name = BinaryClockTests;
+			productName = BinaryClockTests;
+			productReference = A80ADB1E2ACB8721008F4125 /* BinaryClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A80ADB272ACB8721008F4125 /* BinaryClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80ADB382ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockUITests" */;
+			buildPhases = (
+				A80ADB242ACB8721008F4125 /* Sources */,
+				A80ADB252ACB8721008F4125 /* Frameworks */,
+				A80ADB262ACB8721008F4125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80ADB2A2ACB8721008F4125 /* PBXTargetDependency */,
+			);
+			name = BinaryClockUITests;
+			productName = BinaryClockUITests;
+			productReference = A80ADB282ACB8721008F4125 /* BinaryClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80ADB032ACB8720008F4125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A80ADB0A2ACB8720008F4125 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A80ADB1D2ACB8721008F4125 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A80ADB0A2ACB8720008F4125;
+					};
+					A80ADB272ACB8721008F4125 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A80ADB0A2ACB8720008F4125;
+					};
+				};
+			};
+			buildConfigurationList = A80ADB062ACB8720008F4125 /* Build configuration list for PBXProject "BinaryClock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80ADB022ACB8720008F4125;
+			productRefGroup = A80ADB0C2ACB8720008F4125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80ADB0A2ACB8720008F4125 /* BinaryClock */,
+				A80ADB1D2ACB8721008F4125 /* BinaryClockTests */,
+				A80ADB272ACB8721008F4125 /* BinaryClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80ADB092ACB8720008F4125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80ADB182ACB8721008F4125 /* Preview Assets.xcassets in Resources */,
+				A80ADB152ACB8721008F4125 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80ADB1C2ACB8721008F4125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80ADB262ACB8721008F4125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80ADB072ACB8720008F4125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80ADB112ACB8720008F4125 /* ContentView.swift in Sources */,
+				A80ADB132ACB8720008F4125 /* Item.swift in Sources */,
+				A80ADB0F2ACB8720008F4125 /* BinaryClockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80ADB1A2ACB8721008F4125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80ADB232ACB8721008F4125 /* BinaryClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80ADB242ACB8721008F4125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80ADB2F2ACB8721008F4125 /* BinaryClockUITestsLaunchTests.swift in Sources */,
+				A80ADB2D2ACB8721008F4125 /* BinaryClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80ADB202ACB8721008F4125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80ADB0A2ACB8720008F4125 /* BinaryClock */;
+			targetProxy = A80ADB1F2ACB8721008F4125 /* PBXContainerItemProxy */;
+		};
+		A80ADB2A2ACB8721008F4125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80ADB0A2ACB8720008F4125 /* BinaryClock */;
+			targetProxy = A80ADB292ACB8721008F4125 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A80ADB302ACB8721008F4125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A80ADB312ACB8721008F4125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A80ADB332ACB8721008F4125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BinaryClock/BinaryClock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BinaryClock/Preview Content\"";
+				DEVELOPMENT_TEAM = HK5D8DL6RQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A80ADB342ACB8721008F4125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BinaryClock/BinaryClock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BinaryClock/Preview Content\"";
+				DEVELOPMENT_TEAM = HK5D8DL6RQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A80ADB362ACB8721008F4125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK5D8DL6RQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BinaryClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BinaryClock";
+			};
+			name = Debug;
+		};
+		A80ADB372ACB8721008F4125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK5D8DL6RQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BinaryClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BinaryClock";
+			};
+			name = Release;
+		};
+		A80ADB392ACB8721008F4125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK5D8DL6RQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BinaryClock;
+			};
+			name = Debug;
+		};
+		A80ADB3A2ACB8721008F4125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK5D8DL6RQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BinaryClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80ADB062ACB8720008F4125 /* Build configuration list for PBXProject "BinaryClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80ADB302ACB8721008F4125 /* Debug */,
+				A80ADB312ACB8721008F4125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80ADB322ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80ADB332ACB8721008F4125 /* Debug */,
+				A80ADB342ACB8721008F4125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80ADB352ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80ADB362ACB8721008F4125 /* Debug */,
+				A80ADB372ACB8721008F4125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80ADB382ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80ADB392ACB8721008F4125 /* Debug */,
+				A80ADB3A2ACB8721008F4125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80ADB032ACB8720008F4125 /* Project object */;
+}
