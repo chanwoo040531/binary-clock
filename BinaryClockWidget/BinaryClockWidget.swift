@@ -8,45 +8,85 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: AppIntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
-    }
+struct ClockEntry: TimelineEntry {
+    var date: Date
+}
 
-    func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration)
+struct ClockTimelineProvider: TimelineProvider {
+    
+    func placeholder(in context: Context) -> ClockEntry{
+        ClockEntry(date: Date())
     }
     
-    func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
+    func getSnapshot(in context: Context, completion: @escaping (ClockEntry) -> Void) {
+        let entry = ClockEntry(date: Date())
+        completion(entry)
+    }
+    
+    func getTimeline(in context: Context, completion: @escaping (Timeline<ClockEntry>) -> Void) {
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
-
-        return Timeline(entries: entries, policy: .atEnd)
+        let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)
+        
+        let entries = [ClockEntry(date: currentDate)]
+        let timeline = Timeline(entries: entries, policy: .after(nextUpdateDate!))
+        completion(timeline)
     }
 }
 
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationAppIntent
+struct CircleView: View {
+    var isEnabled: Bool
+    var size: CGFloat
+    
+    var body: some View {
+        Circle()
+            .fill(isEnabled ? Color.white : Color.clear)
+            .overlay(Circle().stroke(Color.white, lineWidth: 2))
+            .frame(width: size, height: size)
+    }
 }
 
 struct BinaryClockWidgetEntryView : View {
-    var entry: Provider.Entry
-
+    var entry: ClockTimelineProvider.Entry
+    
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+        let currentDate = entry.date
+        let calender = Calendar.current
+        
+        let hour: Int = calender.component(.hour, from: currentDate)
+        let min: Int = calender.component(.minute, from: currentDate)
+        
+        GeometryReader { geometry in
+            let size = geometry.size.width * 0.1
+            
+            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
+                Spacer().frame(width: size)
+                HStack {
+                    CircleView(isEnabled: (hour & 0b1000) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (hour & 0b0100) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (hour & 0b0010) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (hour & 0b0001) > 0, size: size)
+                    Spacer().frame(width: 0)
+                }.frame(width: geometry.size.width)
+                Spacer().frame(height: size)
+                HStack {
+                    CircleView(isEnabled: (min & 0b100000) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (min & 0b010000) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (min & 0b001000) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (min & 0b000100) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (min & 0b000010) > 0, size: size)
+                    Spacer()
+                    CircleView(isEnabled: (min & 0b000001) > 0, size: size)
+                    Spacer().frame(width: 0)
+                }.frame(width: geometry.size.width)
+                Spacer().frame(width: size)
+            }
         }
     }
 }
@@ -55,9 +95,9 @@ struct BinaryClockWidget: Widget {
     let kind: String = "BinaryClockWidget"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: ClockTimelineProvider()) { entry in
             BinaryClockWidgetEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
+                .containerBackground(.clear, for: .widget)
         }
     }
 }
