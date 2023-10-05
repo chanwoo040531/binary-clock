@@ -47,12 +47,13 @@ struct CircleView: View {
 
 struct BinaryClockWidgetEntryView : View {
     var entry: ClockTimelineProvider.Entry
+    let colorData = ColorData()
     
     var body: some View {
         let currentDate = entry.date
         let calender = Calendar.current
         
-        let hour: Int = calender.component(.hour, from: currentDate)
+        let hour: Int = calender.component(.hour, from: currentDate) % 12
         let min: Int = calender.component(.minute, from: currentDate)
         
         GeometryReader { geometry in
@@ -87,17 +88,20 @@ struct BinaryClockWidgetEntryView : View {
                 }.frame(width: geometry.size.width)
                 Spacer().frame(width: size)
             }
+        }.containerBackground(for: .widget) {
+            colorData.loadColor()
         }
     }
 }
 
 struct BinaryClockWidget: Widget {
-    let kind: String = "BinaryClockWidget"
-
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: ClockTimelineProvider()) { entry in
+        StaticConfiguration(
+            kind: "BinaryClockWidget", 
+            provider: ClockTimelineProvider()
+        ) { entry in
             BinaryClockWidgetEntryView(entry: entry)
-                .containerBackground(.clear, for: .widget)
         }
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

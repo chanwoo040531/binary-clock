@@ -15,26 +15,14 @@
 		A80ADB442ACB8917008F4125 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80ADB432ACB8917008F4125 /* SwiftUI.framework */; };
 		A80ADB472ACB8917008F4125 /* BinaryClockWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB462ACB8917008F4125 /* BinaryClockWidgetBundle.swift */; };
 		A80ADB492ACB8917008F4125 /* BinaryClockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB482ACB8917008F4125 /* BinaryClockWidget.swift */; };
-		A80ADB4B2ACB8917008F4125 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ADB4A2ACB8917008F4125 /* AppIntent.swift */; };
 		A80ADB4D2ACB8917008F4125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80ADB4C2ACB8917008F4125 /* Assets.xcassets */; };
 		A80ADB522ACB8917008F4125 /* BinaryClockWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A80ADB3F2ACB8916008F4125 /* BinaryClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A8163F1D2ACDB64F001B13C7 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8163F1C2ACDB64F001B13C7 /* ColorData.swift */; };
+		A8163F1E2ACDB64F001B13C7 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8163F1C2ACDB64F001B13C7 /* ColorData.swift */; };
+		A83DAA032ACDC532001D3472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80ADB142ACB8721008F4125 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A80ADB1F2ACB8721008F4125 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A80ADB032ACB8720008F4125 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A80ADB0A2ACB8720008F4125;
-			remoteInfo = BinaryClock;
-		};
-		A80ADB292ACB8721008F4125 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A80ADB032ACB8720008F4125 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A80ADB0A2ACB8720008F4125;
-			remoteInfo = BinaryClock;
-		};
 		A80ADB502ACB8917008F4125 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A80ADB032ACB8720008F4125 /* Project object */;
@@ -56,6 +44,16 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8163F032ACDB0F2001B13C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -65,35 +63,21 @@
 		A80ADB142ACB8721008F4125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80ADB172ACB8721008F4125 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A80ADB192ACB8721008F4125 /* BinaryClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinaryClock.entitlements; sourceTree = "<group>"; };
-		A80ADB1E2ACB8721008F4125 /* BinaryClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A80ADB282ACB8721008F4125 /* BinaryClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80ADB3F2ACB8916008F4125 /* BinaryClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BinaryClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80ADB412ACB8916008F4125 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A80ADB432ACB8917008F4125 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A80ADB462ACB8917008F4125 /* BinaryClockWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryClockWidgetBundle.swift; sourceTree = "<group>"; };
 		A80ADB482ACB8917008F4125 /* BinaryClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryClockWidget.swift; sourceTree = "<group>"; };
-		A80ADB4A2ACB8917008F4125 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		A80ADB4C2ACB8917008F4125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80ADB4E2ACB8917008F4125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80ADB4F2ACB8917008F4125 /* BinaryClockWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinaryClockWidget.entitlements; sourceTree = "<group>"; };
+		A8163F1C2ACDB64F001B13C7 /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
+		A8163F1F2ACDBD3C001B13C7 /* BinaryClockDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinaryClockDebug.entitlements; sourceTree = "<group>"; };
+		A8163F202ACDBD4B001B13C7 /* BinaryClockWidgetExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinaryClockWidgetExtensionDebug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A80ADB082ACB8720008F4125 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A80ADB1B2ACB8721008F4125 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A80ADB252ACB8721008F4125 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,6 +99,8 @@
 		A80ADB022ACB8720008F4125 = {
 			isa = PBXGroup;
 			children = (
+				A8163F202ACDBD4B001B13C7 /* BinaryClockWidgetExtensionDebug.entitlements */,
+				A8163F1B2ACDB613001B13C7 /* BinaryClockConfig */,
 				A80ADB0D2ACB8720008F4125 /* BinaryClock */,
 				A80ADB452ACB8917008F4125 /* BinaryClockWidget */,
 				A80ADB402ACB8916008F4125 /* Frameworks */,
@@ -126,8 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				A80ADB0B2ACB8720008F4125 /* BinaryClock.app */,
-				A80ADB1E2ACB8721008F4125 /* BinaryClockTests.xctest */,
-				A80ADB282ACB8721008F4125 /* BinaryClockUITests.xctest */,
 				A80ADB3F2ACB8916008F4125 /* BinaryClockWidgetExtension.appex */,
 			);
 			name = Products;
@@ -136,6 +120,7 @@
 		A80ADB0D2ACB8720008F4125 /* BinaryClock */ = {
 			isa = PBXGroup;
 			children = (
+				A8163F1F2ACDBD3C001B13C7 /* BinaryClockDebug.entitlements */,
 				A80ADB0E2ACB8720008F4125 /* BinaryClockApp.swift */,
 				A80ADB102ACB8720008F4125 /* ContentView.swift */,
 				A80ADB142ACB8721008F4125 /* Assets.xcassets */,
@@ -167,12 +152,19 @@
 			children = (
 				A80ADB462ACB8917008F4125 /* BinaryClockWidgetBundle.swift */,
 				A80ADB482ACB8917008F4125 /* BinaryClockWidget.swift */,
-				A80ADB4A2ACB8917008F4125 /* AppIntent.swift */,
 				A80ADB4C2ACB8917008F4125 /* Assets.xcassets */,
 				A80ADB4E2ACB8917008F4125 /* Info.plist */,
 				A80ADB4F2ACB8917008F4125 /* BinaryClockWidget.entitlements */,
 			);
 			path = BinaryClockWidget;
+			sourceTree = "<group>";
+		};
+		A8163F1B2ACDB613001B13C7 /* BinaryClockConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A8163F1C2ACDB64F001B13C7 /* ColorData.swift */,
+			);
+			path = BinaryClockConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +178,7 @@
 				A80ADB082ACB8720008F4125 /* Frameworks */,
 				A80ADB092ACB8720008F4125 /* Resources */,
 				A80ADB562ACB8917008F4125 /* Embed Foundation Extensions */,
+				A8163F032ACDB0F2001B13C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,42 +189,6 @@
 			productName = BinaryClock;
 			productReference = A80ADB0B2ACB8720008F4125 /* BinaryClock.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A80ADB1D2ACB8721008F4125 /* BinaryClockTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A80ADB352ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockTests" */;
-			buildPhases = (
-				A80ADB1A2ACB8721008F4125 /* Sources */,
-				A80ADB1B2ACB8721008F4125 /* Frameworks */,
-				A80ADB1C2ACB8721008F4125 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A80ADB202ACB8721008F4125 /* PBXTargetDependency */,
-			);
-			name = BinaryClockTests;
-			productName = BinaryClockTests;
-			productReference = A80ADB1E2ACB8721008F4125 /* BinaryClockTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A80ADB272ACB8721008F4125 /* BinaryClockUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A80ADB382ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockUITests" */;
-			buildPhases = (
-				A80ADB242ACB8721008F4125 /* Sources */,
-				A80ADB252ACB8721008F4125 /* Frameworks */,
-				A80ADB262ACB8721008F4125 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A80ADB2A2ACB8721008F4125 /* PBXTargetDependency */,
-			);
-			name = BinaryClockUITests;
-			productName = BinaryClockUITests;
-			productReference = A80ADB282ACB8721008F4125 /* BinaryClockUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		A80ADB3E2ACB8916008F4125 /* BinaryClockWidgetExtension */ = {
 			isa = PBXNativeTarget;
@@ -263,14 +220,6 @@
 					A80ADB0A2ACB8720008F4125 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					A80ADB1D2ACB8721008F4125 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = A80ADB0A2ACB8720008F4125;
-					};
-					A80ADB272ACB8721008F4125 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = A80ADB0A2ACB8720008F4125;
-					};
 					A80ADB3E2ACB8916008F4125 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -290,8 +239,6 @@
 			projectRoot = "";
 			targets = (
 				A80ADB0A2ACB8720008F4125 /* BinaryClock */,
-				A80ADB1D2ACB8721008F4125 /* BinaryClockTests */,
-				A80ADB272ACB8721008F4125 /* BinaryClockUITests */,
 				A80ADB3E2ACB8916008F4125 /* BinaryClockWidgetExtension */,
 			);
 		};
@@ -307,24 +254,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A80ADB1C2ACB8721008F4125 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A80ADB262ACB8721008F4125 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A80ADB3D2ACB8916008F4125 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83DAA032ACDC532001D3472 /* Assets.xcassets in Resources */,
 				A80ADB4D2ACB8917008F4125 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,20 +272,7 @@
 			files = (
 				A80ADB112ACB8720008F4125 /* ContentView.swift in Sources */,
 				A80ADB0F2ACB8720008F4125 /* BinaryClockApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A80ADB1A2ACB8721008F4125 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A80ADB242ACB8721008F4125 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A8163F1D2ACDB64F001B13C7 /* ColorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,23 +282,13 @@
 			files = (
 				A80ADB472ACB8917008F4125 /* BinaryClockWidgetBundle.swift in Sources */,
 				A80ADB492ACB8917008F4125 /* BinaryClockWidget.swift in Sources */,
-				A80ADB4B2ACB8917008F4125 /* AppIntent.swift in Sources */,
+				A8163F1E2ACDB64F001B13C7 /* ColorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A80ADB202ACB8721008F4125 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A80ADB0A2ACB8720008F4125 /* BinaryClock */;
-			targetProxy = A80ADB1F2ACB8721008F4125 /* PBXContainerItemProxy */;
-		};
-		A80ADB2A2ACB8721008F4125 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A80ADB0A2ACB8720008F4125 /* BinaryClock */;
-			targetProxy = A80ADB292ACB8721008F4125 /* PBXContainerItemProxy */;
-		};
 		A80ADB512ACB8917008F4125 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A80ADB3E2ACB8916008F4125 /* BinaryClockWidgetExtension */;
@@ -510,8 +421,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BinaryClock/BinaryClock.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = BinaryClock/BinaryClockDebug.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -520,6 +432,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Binary Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,8 +454,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = BinaryClock/BinaryClock.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -550,6 +465,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Binary Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,85 +481,13 @@
 			};
 			name = Release;
 		};
-		A80ADB362ACB8721008F4125 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK5D8DL6RQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BinaryClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BinaryClock";
-			};
-			name = Debug;
-		};
-		A80ADB372ACB8721008F4125 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK5D8DL6RQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BinaryClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BinaryClock";
-			};
-			name = Release;
-		};
-		A80ADB392ACB8721008F4125 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK5D8DL6RQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = BinaryClock;
-			};
-			name = Debug;
-		};
-		A80ADB3A2ACB8721008F4125 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HK5D8DL6RQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.chnu.BinaryClockUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = BinaryClock;
-			};
-			name = Release;
-		};
 		A80ADB542ACB8917008F4125 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = BinaryClockWidget/BinaryClockWidget.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_ENTITLEMENTS = BinaryClockWidgetExtensionDebug.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HK5D8DL6RQ;
@@ -672,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = BinaryClockWidget/BinaryClockWidget.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HK5D8DL6RQ;
@@ -713,24 +558,6 @@
 			buildConfigurations = (
 				A80ADB332ACB8721008F4125 /* Debug */,
 				A80ADB342ACB8721008F4125 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A80ADB352ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A80ADB362ACB8721008F4125 /* Debug */,
-				A80ADB372ACB8721008F4125 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A80ADB382ACB8721008F4125 /* Build configuration list for PBXNativeTarget "BinaryClockUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A80ADB392ACB8721008F4125 /* Debug */,
-				A80ADB3A2ACB8721008F4125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
