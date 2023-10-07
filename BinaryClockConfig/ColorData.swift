@@ -6,7 +6,6 @@ struct ColorData {
     
     func saveColor(color: Color) {
         let color = NSColor(color).cgColor
-        print("saved!")
         if let components = color.components {
             if let userDefaults = UserDefaults(suiteName: "group.me.chnu.BinaryClock") {
                 userDefaults.set(components, forKey: COLOR_KEY)
@@ -18,7 +17,6 @@ struct ColorData {
     func loadColor() -> Color {
         if let userDefaults = UserDefaults(suiteName: "group.me.chnu.BinaryClock") {
             guard let array = userDefaults.object(forKey: COLOR_KEY) as? [CGFloat] else { return Color.black }
-            print("loaded")
             let color = Color(.sRGB,
                               red: array[0],
                               green: array[1],
