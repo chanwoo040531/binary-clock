@@ -6,3 +6,8 @@ Binary clock widget application
 
 
 ![image](https://github.com/chanwoo040531/BinaryClock/assets/114650607/5076e270-5cd0-4193-9b50-b756463596d0)
+
+## TODO
+ - [ ] add bit color option
+ - [ ] fix time interval
+ - [ ] add background color options
