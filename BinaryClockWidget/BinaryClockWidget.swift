@@ -14,7 +14,7 @@ struct ClockEntry: TimelineEntry {
 
 struct ClockTimelineProvider: TimelineProvider {
     
-    func placeholder(in context: Context) -> ClockEntry{
+    func placeholder(in context: Context) -> ClockEntry {
         ClockEntry(date: Date())
     }
     
