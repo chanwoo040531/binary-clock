@@ -3,7 +3,7 @@ import SwiftUI
 
 struct ColorData {
     private var COLOR_KEY = "COLOR_KEY"
-    private let userDefaults = UserDefaults(suiteName: "group.me.chnu.BinaryClock")
+    private let userDefaults = UserDefaults(suiteName: "group.me.chnu.BinaryClock")!
     
     func saveColor(color: Color) {
         let color = NSColor(color).cgColor
