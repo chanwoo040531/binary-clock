@@ -20,6 +20,8 @@
 		A8163F1D2ACDB64F001B13C7 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8163F1C2ACDB64F001B13C7 /* ColorData.swift */; };
 		A8163F1E2ACDB64F001B13C7 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8163F1C2ACDB64F001B13C7 /* ColorData.swift */; };
 		A83DAA032ACDC532001D3472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80ADB142ACB8721008F4125 /* Assets.xcassets */; };
+		A89553FD2AF9332200D3D65D /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89553FC2AF9332200D3D65D /* ColorOption.swift */; };
+		A89553FE2AF9332200D3D65D /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89553FC2AF9332200D3D65D /* ColorOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,7 @@
 		A8163F1C2ACDB64F001B13C7 /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
 		A8163F1F2ACDBD3C001B13C7 /* BinaryClockDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinaryClockDebug.entitlements; sourceTree = "<group>"; };
 		A8163F202ACDBD4B001B13C7 /* BinaryClockWidgetExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinaryClockWidgetExtensionDebug.entitlements; sourceTree = "<group>"; };
+		A89553FC2AF9332200D3D65D /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A8163F1C2ACDB64F001B13C7 /* ColorData.swift */,
+				A89553FC2AF9332200D3D65D /* ColorOption.swift */,
 			);
 			path = BinaryClockConfig;
 			sourceTree = "<group>";
@@ -270,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89553FD2AF9332200D3D65D /* ColorOption.swift in Sources */,
 				A80ADB112ACB8720008F4125 /* ContentView.swift in Sources */,
 				A80ADB0F2ACB8720008F4125 /* BinaryClockApp.swift in Sources */,
 				A8163F1D2ACDB64F001B13C7 /* ColorData.swift in Sources */,
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89553FE2AF9332200D3D65D /* ColorOption.swift in Sources */,
 				A80ADB472ACB8917008F4125 /* BinaryClockWidgetBundle.swift in Sources */,
 				A80ADB492ACB8917008F4125 /* BinaryClockWidget.swift in Sources */,
 				A8163F1E2ACDB64F001B13C7 /* ColorData.swift in Sources */,

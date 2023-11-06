@@ -9,21 +9,25 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @State private var color: Color = Color.black
+    @State private var backgroundColor: Color = Color.black
+    @State private var bitColor: Color = Color.white
     private var colorData = ColorData()
     
     var body: some View {
         VStack(spacing: 10) {
-            ColorPicker("Pick a color: ", selection: $color, supportsOpacity: false)
+            ColorPicker("Pick a background color: ", selection: $backgroundColor, supportsOpacity: false)
+            ColorPicker("Pick a bit color", selection: $bitColor, supportsOpacity: false)
             
             Button("save") {
-                colorData.saveColor(color: color)
+                colorData.saveColor(color: backgroundColor, option: .background)
+                colorData.saveColor(color: bitColor, option: .bit)
             }
             Spacer()
         }
         .padding()
         .onAppear {
-            color = colorData.loadColor()
+            backgroundColor = colorData.loadColor(option: .background)
+            bitColor = colorData.loadColor(option: .bit)
         }
     }
 }

@@ -36,10 +36,11 @@ struct ClockTimelineProvider: TimelineProvider {
 struct CircleView: View {
     var isEnabled: Bool
     var size: CGFloat
+    let colorData = ColorData()
     
     var body: some View {
         Circle()
-            .fill(isEnabled ? Color.white : Color.clear)
+            .fill(isEnabled ? colorData.loadColor(option: .bit) : Color.clear)
             .overlay(Circle().stroke(Color.white, lineWidth: 2))
             .frame(width: size, height: size)
     }
@@ -89,7 +90,7 @@ struct BinaryClockWidgetEntryView : View {
                 Spacer().frame(width: size)
             }
         }.containerBackground(for: .widget) {
-            colorData.loadColor()
+            colorData.loadColor(option: .background)
         }
     }
 }
