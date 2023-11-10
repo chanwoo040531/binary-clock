@@ -4,7 +4,7 @@ Binary clock widget application
 ### TODO
  - [x] add bit color option
  - [ ] fix time interval
- - [ ] add background color options
+ - [x] add background color options
  - [ ] add decimal hints
  - [ ] add 24 hour clock option
 
