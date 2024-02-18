@@ -25,7 +25,7 @@ struct ClockTimelineProvider: TimelineProvider {
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<ClockEntry>) -> Void) {
         let currentDate = Date()
-        let nextUpdateDate = Calendar.current.date(byAdding: .second, value: 1, to: currentDate)
+        let nextUpdateDate = Calendar.current.date(byAdding: .second, value: 60, to: currentDate)
         
         let entries = [ClockEntry(date: currentDate)]
         let timeline = Timeline(entries: entries, policy: .after(nextUpdateDate!))
@@ -90,7 +90,8 @@ struct BinaryClockWidgetEntryView : View {
                 Spacer().frame(width: size)
             }
         }.containerBackground(for: .widget) {
-            colorData.loadColor(option: .background)
+//            colorData.loadColor(option: .background)
+            Color.black
         }
     }
 }
