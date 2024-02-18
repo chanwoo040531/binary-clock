@@ -40,7 +40,7 @@ struct CircleView: View {
     
     var body: some View {
         Circle()
-            .fill(isEnabled ? colorData.loadColor(option: .bit) : Color.clear)
+            .fill(.clear/*isEnabled ? colorData.loadColor(option: .bit) : Color.clear*/)
             .overlay(Circle().stroke(Color.white, lineWidth: 2))
             .frame(width: size, height: size)
     }
